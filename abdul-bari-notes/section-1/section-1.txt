@@ -1,0 +1,20 @@
+Friday, May 30, 2025
+
+Video 2
+JDK: Java Development Kit
+- Write and compile Java programs (compilers, development tools, debugging, etc.)
+- Also includes JRE (execute/run programs)
+- "Develop Java programs"
+
+JRE: Java Runtime Environment
+- Runs Java programs and Java class libraries
+- Includes JVM
+- "Execute Java programs"
+
+JVM: Java Virtual Machine
+- The "executing" part of the JRE
+
+
+First.java -> Javac (compiler) -> First.class
+- The compiler is given by the JDK
+- To run First.class, you use "Java First", which starts the RE
