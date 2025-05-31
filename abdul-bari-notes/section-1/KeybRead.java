@@ -17,14 +17,20 @@ public class KeybRead
         c = a + b;
 
         System.out.println("The sum is " + c);  // + for concatenation
+        s.nextLine();
 
 
 
         String name;
         System.out.println("Please enter your name: ");
         name = s.nextLine();
+        // note, nextInt() doesn't consume the newline character (\n)
+        // which means that calling nextLine() right after will leave you with an empty input (just \n)
+        // one workaround is calling an extra nextLine() method;
 
         System.out.println("Hello, " + name + ".");
+
+        s.close();
     }
 }
 
