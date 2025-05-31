@@ -30,8 +30,18 @@ public class KeybRead
 
         System.out.println("Hello, " + name + ".");
 
+
+
+        System.out.println("Enter a number in binary, and it will be printed in decimal: ");
+        s.useRadix(2);  // the next int is expected to be in base 2 (binary)
+        int x = s.nextInt();  // the keyboard input here MUST be in binary (e.g. 1010)
+
+        System.out.println(x);  // the output will be printed in decimal (default)
+
         s.close();
     }
+
+    // improper input formats will cause a java.util.InputMismatchException!
 }
 
 /*
@@ -49,5 +59,7 @@ nextBoolean()
 
 hasNextInt()  // determine if the next input is an integer (returns true or false)
 hasNextFloat()
+
+useRadix()  // set a number base for your next input
 
 */
